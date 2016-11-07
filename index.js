@@ -3,29 +3,16 @@
 		- the image
 		- the button
 */
-var myImage = document.getElementById("image");
-var editImageButton = document.getElementById("edit");
+var myImage = 
+var editImageButton = 
 
 // 	2) Add a click handler to the button
-editImageButton.addEventListener("click", launchImageEditor, false);
+editImageButton
 
 // 	3) Initialize the Image Editor 
-var csdkImageEditor = Aviary.Feather({
-	apiKey: "a7fb672e325740759319beefba5be2dc",
-	onSave: function(id, newURL) {
-		csdkImageEditor.close();
-		myImage.src = newURL;
-	},
-	onError: function(error) {
-		console.log(error);
-	}
-});
+var csdkImageEditor = 
 
 // 	4) Make the helper function for the click handler
 function launchImageEditor() {
 
-	csdkImageEditor.launch({
-		image: myImage.id,
-		url: myImage.src
-	});
 }
