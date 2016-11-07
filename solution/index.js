@@ -11,7 +11,7 @@ editImageButton.addEventListener("click", launchImageEditor, false);
 
 // 	3) Initialize the Image Editor 
 var csdkImageEditor = Aviary.Feather({
-	apiKey: "a7fb672e325740759319beefba5be2dc",
+	apiKey: "",
 	onSave: function(id, newURL) {
 		csdkImageEditor.close();
 		myImage.src = newURL;
